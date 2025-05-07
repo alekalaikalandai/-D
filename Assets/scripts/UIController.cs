@@ -1,16 +1,24 @@
 using UnityEngine;
     using TMPro;
+using UnityEngine.UIElements;
+using UnityEngine.Animations;
 
 public class UIController : MonoBehaviour
 {
-    public GameObject avatarImage;
-    public TMP_Text text;   
-   public void DeactivateImage()
+  
+    public TMP_Text text;
+    public GameObject Panel;
+    public GameObject Panel2;
+   public void DeactivatePanel()
     {
-        avatarImage.SetActive(false);  
+        Panel.SetActive(false);
+        Panel2.SetActive(true);
     }
 
-    // Update is called once per frame
+
+
+
+
     void Update()
     {
         
